@@ -1,0 +1,32 @@
+{
+  "name": "tanugupta_3183491_cypress",
+  "version": "1.0.0",
+  "description": "Hi , this is automation framwork based on cypress on js for automation on orangelive.com site",
+  "main": "index.js",
+  "scripts": {
+    "script": "cypress run",
+    "test": "cypress run --record --key 15e79402-db48-4ae0-ae77-d23748a64dc3 ",
+    "pageLoadTimeout": 60000,
+  "responseTimeout": 15000,
+  "requestTimeout": 15000,
+  "video": true,
+  "ScreenshotsFolder": "cypress/videos",
+    
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/e2e/BDD/stepDefinition/*.js",
+    "json": {
+      "enabled": true,
+      "formatter": "./jsonFormatter/cucumber-json-formatter",
+      "output": "json-logs/report.json"
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cypress/xpath": "^2.0.3",
+    "chai": "^4.3.7",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-mochawesome-reporter": "^3.5.0"
+  },
+  "dependencies"
